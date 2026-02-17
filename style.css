@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "fixel";
+    src: url(Fixel.woff2);
+}
+@font-face{
+    font-family: "Nothing";
+    src:url("Nothing.ttf")
+}
+
+@font-face {
+    font-family: "krapka";
+    src: url(Krapka.ttf);
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+.Main{
+    display: grid;
+    place-items: center;
+    width: 50px;
+}
+
+#contact{
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label{
+    font-size: 150%;
+    font-family: 'krapka';
+}
+
+input[type="submit"]{
+    border: 1px solid aliceblue;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-self: center;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+}
+input[type="submit"]:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: .5s;
+}
+
+
+input{
+    color:aliceblue;
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid white ;
+    width: 300px;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: aliceblue;
+    opacity: 50%;
+}
+
+input:focus{
+    border-bottom: 1px dotted red;
+}
+#head{
+    width:100%;
+    animation: typing 5s steps(22), blink .5s step-end alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 500%;
+}
+
+*::selection, *::-moz-selection{
+    background-color: aliceblue;
+    color: black;
+}
+
+.ukrdot{
+    font-family: "krapka";
+}
+
+.footer{
+    font-size: 100%;
+    font-family: "krapka";
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+
+#menubtn{
+    display:none;
+    background-color: black;
+    color: white;
+}
+
+#menubtn span{    display: block;
+
+    width: 30px;
+    height: 4px; 
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: "fixel";
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid aliceblue;
+
+}
+
+.logo{
+    color: aliceblue;
+    font-family: "Nothing";
+    font-size: 200%;
+    margin-right: auto;
+}
+
+i{
+    color: aliceblue;
+}
+
+i:hover{
+    color: rgb(128, 128, 128);
+    transition: .5s;
+}
+
+.link{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "krapka";
+    font-size: 125%;
+}
+
+.link:visited{
+    color: gray;
+}
+
+.link:hover{
+    text-decoration:underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.dotted{
+    font-size: 600%;
+    color: aliceblue;
+    font-family: "Nothing";
+}
+
+.Main{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.oneLogo{float: right;
+width: 200px;
+height: 200px;
+border-radius: 50%;}
+
+.History{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     text-align: left; 
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.storytell{
+    font-size: 350%;
+}
+
+red{
+    color: red;
+}
+
+p{
+    font-size: 200%;
+}
+
+.prodHeader{
+    font-size: 300%;
+    font-family: "Nothing";
+}
+
+.productImg{
+    width: 300px;
+}
+
+footer{
+    border-top: 1px solid aliceblue;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.indeximg{
+    width: 25%;
+    border-radius: 20px;
+}
+
+.IndexDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     text-align: center; 
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.prod{
+    border: 1px dotted;
+    border-radius: 20px;
+    border-bottom: 0;
+}
+
+@media screen and (max-width:700px) {
+    #head{
+        font-size: 500%;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .fade{
+        animation:fadeIn 1s forwards;
+    }
+
+
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links{
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+    }
+    .History{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    figcaption{
+        font-size: 90%;
+    }
+    .oneLogo{
+       width: 150px;
+       height: 150px;
+        margin-top: 20px;
+        float: none;
+    }
+    #figureDiv{
+        display: flex;
+    }
+    #menubtn{
+        margin-left: auto;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-around;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border: none;
+        padding: 10px; 
+       }
+
+    .links{
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    .active .span1{
+        transform: rotate(45deg) translate(4px, 3px);
+       }
+       .active .span2{
+           opacity: 0;
+       }
+       .active .span3{
+           transform:rotate(-45deg) translate(4px, -3px); ;
+       }
+
+
+    
+}
